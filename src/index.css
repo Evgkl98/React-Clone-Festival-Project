@@ -1,0 +1,666 @@
+
+@font-face {
+  font-family: "Tschichold-Bold";
+  src: url("./tschichold-bold.ttf");
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url("../sairacondensed-regular-webfont.ttf")
+}
+@font-face {
+  font-family: "Saira-info";
+  src: url("../sairacondensed-regular-webfont.ttf");
+}
+
+@keyframes animatedBackground{
+  from { background-position: 0% 0%; }
+  to { background-position: 0% 100%; }
+}
+
+@keyframes turningAndGrowingLogo{
+  from {transform: rotate(-60deg) scale(0.3);}
+  to {transform: rotate(0deg) scale(1);}
+}
+
+@keyframes fadeInAnimation{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+body {
+  margin: 0;
+  background-image: url("/WEB_LSMJ24_bcg_pol.svg");
+  background-size: cover;
+	background-repeat: repeat-y;
+  background-attachment: scroll;
+
+  background-position: 0px 0px;
+  animation: animatedBackground 600s linear 2s infinite alternate, fadeInAnimation 2s ease-out;
+
+  font-family: "Tschichold-Bold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 166, 42);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+#root{
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content{
+  background-color: rgba(255,255,255,.692);
+  color: black;
+  border-radius: 20px 20px 20px 20px;
+  backdrop-filter: blur(20px);
+}
+#navbar{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+  background-color: #ffffffdb;
+}
+.nb-buttons{
+  width: auto;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Saira', sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  margin: 1em;
+  padding: 1em;
+  background-color: white;
+  transition: 0.35s;
+}
+.nb-buttons:hover{
+  background-color: rgb(201, 201, 201);
+  transition-duration: 0.35s;
+  box-shadow: 0 10px 26px 0 rgba(0,0,0,0.24), 0 1px 10px 0 rgba(0,0,0,0.19);
+}
+#main-section{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 100px 30px 100px;
+  width: 500px;
+}
+.section-header{
+  font-size: 1.5rem;
+}
+.section-header::after{
+  background-image: linear-gradient(90deg,#7953A2,#7953A2,#458D3F,#458D3F,#EFB91D,#EFB91D);
+  display: block;
+  content: "";
+  width: 20%;
+  height: 2px;
+  margin: 0.7em 0 1em;
+  border-radius: 2px;
+}
+.subheader{
+  font-size: 1.5rem;
+}
+.info{
+  font-family: 'Saira-info';
+  font-size: larger;
+  line-height: 150%;
+}
+.infovideo{
+  font-family: 'Saira';
+  font-size: larger;
+  line-height: 150%;
+}
+.video-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.video-content{
+  width: 500px;
+  height: 20rem;
+  border-radius: 10px;
+}
+.main-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+#main-logo{
+  position: relative;
+  min-width: 21%;
+  min-height: 21%;
+  background-color: rgba(255,255,255,.692);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(20px);
+  animation: turningAndGrowingLogo 0.6s ease-out
+}
+#main-name{
+  background-color: #ffffffed;
+  border-radius: 20px;
+  padding: 25px 40px 25px 40px;
+  font-size: 70px;
+  margin-bottom: 50px;
+  width: auto;
+  text-align: center;
+  animation: fadeInAnimation 2s ease-out
+}
+#date{
+  background-color: #ffffffd9;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Saira';
+  font-size: x-large;
+  font-weight: 900;
+  margin-bottom: 60px;
+  animation: fadeInAnimation 3s ease-out
+}
+
+#partners-project-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+  margin-top: 50px;
+}
+.partner-logo{
+  height: auto;
+  max-width: 100%;
+}
+.partner-logo:hover{
+  transition-duration: 0.3s;
+  opacity: 0.6;
+}
+
+#kampusLogo{
+  grid-area: 1/2/2/3;
+  max-height: 90%;  
+  place-self: center;
+}
+#cvutLogo{
+  grid-area: 2/1/3/2;
+  max-height: 40%;
+  max-width: 50%;
+  place-self: center;
+}
+#vschtLogo{
+  grid-area: 2/2/3/3;
+  max-height: 37%;
+  width: 90%;
+  place-self: center;
+}
+#ukKtfLogo{
+  grid-area: 2/3/3/4;
+  max-height: 27%;
+  max-width: 80%;
+  place-self: center;
+}
+
+#suCvutLogo{
+  grid-area: 3/1/4/4;
+  max-width: 35%;
+  max-height: 50%;
+  place-self: center;
+}
+#praha6Logo{
+  grid-area: 4/1/5/2;
+  max-height: 75%;
+  max-width: 50%;
+  place-self: center;
+}
+#uochbLogo{
+  grid-area: 4/2/5/3;
+  max-height: 50%;
+  max-width: 85%;
+  place-self: center;
+}
+#ntkLogo{
+  grid-area: 4/3/5/4;
+  max-height: 50%;
+  max-width: 60%;
+  place-self: center;
+}
+#pctLogo{
+  grid-area: 5/1/6/2;
+  height: auto;
+  width: 80%;
+  place-self: center;
+}
+#fspLogo{
+  grid-area: 5/2/6/3;
+  max-height: 80%;
+  max-width: 60%;
+  place-self: center;
+}
+#speedpressLogo{
+  grid-area: 5/3/6/4;
+  max-height: 30%;
+  max-width: 80%;
+  place-self: center;
+}
+#ustavUdrLogo{
+  grid-area: 6/1/7/2;
+  max-height: 40%;
+  max-width: 80%;
+  place-self: center;
+}
+#kantorLogo{
+  grid-area: 6/2/7/3;
+  max-height: 60%;
+  max-width: 45%;
+  place-self: center;
+}
+#psasLogo{
+  grid-area: 6/3/7/4;
+  max-height: 50%;
+  max-width: 50%;
+  place-self: center;
+}
+.partners-header{
+  font-size: 30px;
+  color: #7953A2;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+#partners-main{
+  margin-top: 20px;
+}
+#partners-construction-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+#fsCvutLogo{
+  grid-area: 1/1/2/2;
+  max-height: 100%;
+  max-width: 70%;
+  place-self: center;
+}
+#dekLogo{
+  grid-area: 1/2/2/3;
+  max-height: 70%;
+  max-width: 55%;
+  place-self: center;
+}
+#pradastLogo{
+  grid-area: 1/3/2/4;
+  max-height: 100%;
+  max-width: 80%;
+  place-self: center;
+}
+#contacts-main{
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+#contacts-link{
+  transition-duration: 0.35s;
+  width:auto;
+  display: inline-block;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+#contacts-link:hover{
+  color: #f9b600;
+  transition-duration: 0.35s;
+}
+#kampus-dejvice{
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+.centered{
+  text-align: center;
+}
+.section-header-centered{
+  font-size: 1.5rem;
+}
+.section-header-centered::after{
+  background-image: linear-gradient(90deg,#7953A2,#7953A2,#458D3F,#458D3F,#EFB91D,#EFB91D);
+  display: flex;
+  content: "";
+  width: 20%;
+  height: 2px;
+  margin: 0.7em 0 1em;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.twocol-layout{
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  column-count: 2;
+  column-gap: 50px;
+  text-align: justify;
+
+}
+.active{
+  background-color: rgb(218, 218, 218);
+  width: auto;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Saira';
+  font-size: medium;
+  font-weight: bold;
+  margin: 1em;
+  padding: 1em
+}
+#about{
+  padding: 30px 40px 30px 40px;
+}
+.about-subheader{
+  padding: 0px 40px 0px 40px;
+}
+#links-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.links{
+  width: auto;
+  padding: 5px 15px 5px 15px;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  font-family: "Saira-info";
+  font-size: large;
+  font-weight: bolder;
+  border: 1px solid rgb(173, 173, 173);
+}
+.links:hover{
+  background-color: #EFB91D;
+  transition: 0.3s;
+}
+#contacts-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Saira";
+  font-size: larger;
+}
+.contact-links{
+  text-decoration: dashed;
+  color: black;
+}
+.contact-links:hover{
+  color: #EFB91D;
+}
+#competition-container{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 7rem 2rem 6rem
+}
+.comp-link{
+  max-width: fit-content;
+}
+
+#comp-form{
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.comp-header{
+  font-size: xx-large;
+}
+.comp-input{
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: rgb(233, 233, 233);
+  border: 0px;
+  font-size: medium;
+}
+#comments{
+  padding-bottom: 15rem;
+  resize: none;
+}
+#comments::-webkit-scrollbar {
+  width: 15px;
+}
+#comments::-webkit-scrollbar-thumb {
+  border-radius: 10px
+}
+#comp-podcast{
+  border-radius: 10px;
+}
+td{
+  padding: 10px;
+}
+tr:nth-child(odd){
+  background-color: rgba(255, 246, 246, 0.478);
+}
+
+@media only screen and (max-width: 1400px) {
+  #main-name{
+    font-size: 3em
+  }
+  #date{
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 890px) {
+  
+  #root{
+    max-width: 90%;
+  }
+  #main-section{
+    text-align: center;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .section-header::after{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .video-content{
+    width: 80%;
+    height: 20vh;
+  }
+  .twocol-layout{
+    column-count: 1;
+  }
+  #partners-project-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 1rem;
+  }
+
+  .partner-logo{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+  }
+
+  .section-header{
+    align-self: center;
+  }
+  .section-header::after{
+    width: 150px;
+  }
+  #competition-container{
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+  }
+  .comp-header{
+    font-size: xx-large;
+  }
+
+
+
+
+  /* logos for media queries*/
+
+  #cvutLogo{
+    max-width: 40%;
+  }
+  #ukKtfLogo{
+    max-width: 50%;
+  }
+  #praha6Logo{
+    max-width: 30%;
+  }
+  #uochbLogo{
+    max-width: 50%;
+  }
+  #ntkLogo{
+    max-width: 40%;
+  }
+  #pctLogo{
+    max-width: 50%;
+  }
+  #fspLogo{
+    max-width: 30%;
+  }
+  #speedpressLogo{
+    max-width: 50%;
+  }
+  #ustavUdrLogo{
+    max-width: 50%;
+  }
+  #kantorLogo{
+    max-width: 30%;
+  }
+  #psasLogo{
+    max-width: 30%;
+  }
+
+  #partners-construction-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 1rem;
+  }
+  #fsCvutLogo{
+    max-width: 50%;
+  }
+  #dekLogo{
+    max-width: 47%;
+  }
+  #pradastLogo{
+    max-width: 70%;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+  
+  #root{
+    max-width: 90%;
+  }
+  
+  #main-logo{
+    max-width: 45vw;
+    max-height: 45vh;
+  }
+  
+  #main-name{
+    font-size: 2rem;
+    border-radius: 20px;
+    padding: 15px 20px 15px 20px;
+  }
+  #date{
+    font-size: larger;
+    border-radius: 20px;
+    padding: 15px 20px 15px 20px;
+  }
+  .nb-buttons{
+    margin: 10px;
+  }
+  .nb-buttons:hover{
+    margin: 10px;
+  }
+  .active{
+    margin: 10px;
+  }
+  #main-section{
+    text-align: center;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-header{
+    font-size: large;
+  }
+  .info{
+    font-size: medium;
+  }
+  .infovideo{
+    font-size: small;
+  }
+  .video-content{
+    height: auto;
+  }
+  .subheader{
+    font-size: medium;
+  }
+  .partners-header{
+    font-size: x-large;
+  }
+  .section-header-centered{
+    font-size: large;
+  }
+  #about-header{
+    font-size: medium;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  .twocol-layout{
+    max-width: 100%;
+  }
+  #kampus-dejvice{
+    font-size: medium;
+  }
+  .comp-link{
+    max-width: 100%;
+    font-size: medium;
+  }
+  #competition-container{
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .comp-header{
+    font-size: x-large;
+  }
+  .comp-input{
+    font-size: smaller;
+    padding: 13px;
+  }
+  #comp-form{
+    padding: 1.5rem;
+  }
+  #comments{
+    padding-bottom: 10rem;
+  }
+}
