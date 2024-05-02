@@ -4,7 +4,7 @@ This is a React-clone project of an old version of student festival official web
 
 ## Deploy
 
-The project should now be running and accessible at: https://react-clone-festival-project.vercel.app/
+The project should be now running and accessible at: https://react-clone-festival-project.vercel.app/
 
 ## Idea of the project
 
