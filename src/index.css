@@ -1,16 +1,16 @@
 
 @font-face {
   font-family: "Tschichold-Bold";
-  src: url("./tschichold-bold.ttf");
+  src: url("/tschichold-bold.ttf");
 }
 
 @font-face {
   font-family: "Saira";
-  src: url("../sairacondensed-regular-webfont.ttf")
+  src: url("/sairacondensed-regular-webfont.ttf")
 }
 @font-face {
   font-family: "Saira-info";
-  src: url("../sairacondensed-regular-webfont.ttf");
+  src: url("/sairacondensed-regular-webfont.ttf");
 }
 
 @keyframes animatedBackground{
