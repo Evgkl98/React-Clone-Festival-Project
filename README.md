@@ -20,6 +20,6 @@ Almost all features of this project are similar to features of [the official pag
 
 The main distinctive feature is perfomance improvement and new pages navigation. All five sections with different content are now managed by React state. Therefore, there is ***no need of backend part*** in this project, unlike [the original website](https://lesamaj.cz/) that has one.
 
-In addition, all animation was rebuilt in pure CSS.
+In addition, all animation was rebuilt in pure CSS + added new small fancy animations (i.e. moving background, scroll bar style etc.).
 
 
