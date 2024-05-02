@@ -8,7 +8,7 @@ import ntkLogo from "../partners/ntk_logo.png";
 import pctLogo from "../partners/pct_logo.png";
 import pradastLogo from "../partners/pradast_logo.png";
 import praha6Logo from "../partners/praha6_logo.png";
-import psasLogo from "../partners/psas_Logo.png";
+import psasLogo from "../partners/psas_logo.png";
 import speedpressLogo from "../partners/speedpress_logo.jpg";
 import suCvutLogo from "../partners/su_cvut_logo.png";
 import ukKtfLogo from "../partners/uk_ktf_logo.png";
