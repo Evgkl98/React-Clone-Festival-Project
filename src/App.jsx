@@ -7,12 +7,14 @@ import MainContainer from "./Components/MainContainer";
 
 function App() {
   return (
-    <MainContainer>
-      <Header />
-      <FestivalName />
-      <Content />
-      <KampusDejvice></KampusDejvice>
-    </MainContainer>
+    <>
+      <MainContainer>
+        <Header />
+        <FestivalName />
+        <Content />
+        <KampusDejvice></KampusDejvice>
+      </MainContainer>
+    </>
   );
 }
 

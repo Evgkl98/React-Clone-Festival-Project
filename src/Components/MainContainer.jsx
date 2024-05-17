@@ -1,10 +1,11 @@
 import { memo } from "react"
+import { motion } from "framer-motion";
 
 
 const Maincontainer = memo(function MainContainer({children}){
-    return <div id="main-container">
+    return <motion.div id="main-container">
         {children}
-    </div>
+    </motion.div>
 })
 
 export default Maincontainer;
